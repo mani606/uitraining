@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        User Information Page
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="..\css\styles.css">
+
+</head>
+
+<body>
+    <h1> User Information</h1>
+    <div class="container">
+        <div class="main">
+            <table>
+
+                <form>
+
+                    <tr>
+                        <td><input type="text" id="userName" name="userName" placeholder="Enter UserName"
+                                autocomplete="on" autofocus /></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="text" id="email" name="email" placeholder="Enter Email"
+                                pattern="\w+([-+.]\w+)*@(dbs\.com|hcl\.com)" required
+                                title="Email should be HCL or DBS domain" /></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="text" list="skills" id="inputSkills" name="inputSkills"
+                                placeholder="Select Skills" />
+                            <datalist id=skills>
+                                <option value="Html"></option>
+                                <option value="css"></option>
+                                <option value="angular"></option>
+                                <option value="react"></option>
+                                <option value="Javascript"></option>
+                            </datalist></td>
+                    </tr>
+                    <tr>
+                        <td> <select type="text" multiple placeholder="Language">
+                                <option>Select Language</option>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Telugu</option>
+                                <option>Other</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type=number placeholder="Enter Age" name="age" id="age" step="2"> </td>
+                    </tr>​
+
+
+                    <tr>
+                        <td> <input type="text" id="panNumber" name="panNumber" placeholder="Enter Pan Number"
+                                pattern="[A-Za-z0-9]" /></td>
+                    </tr>
+            </table>
+            <button type="button">SUBMIT</button>
+            <button class="button1">RESET</button>
+        </div>
+    </div>
+    </form>
+
+
+
+</body>
+
+</html>
